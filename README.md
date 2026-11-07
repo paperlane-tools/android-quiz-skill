@@ -15,10 +15,10 @@
 
 本技能只负责**题目流程**；设备层（截图、点击、UI dump、Shizuku/rish、通知）由通用控制技能提供：
 
-> 🔧 **先安装 [`android-shell`](https://github.com/paperlane-tools/android-shell-skill)**
+> 🔧 **先安装 [`android-shell`](https://github.com/MC090610/android-shell-skill)**
 >
 > ```text
-> 从 https://github.com/paperlane-tools/android-shell-skill 安装 android-shell
+> 从 https://github.com/MC090610/android-shell-skill 安装 android-shell
 > ```
 >
 > 装完后先按它的 Step 0 做环境自检（Termux / Shizuku / rish / adb），
@@ -38,7 +38,7 @@
 
 把下面这句发给你的 Agent（Codex / OpenClaw 都适用）：
 
-> 先安装 https://github.com/paperlane-tools/android-shell-skill ，再安装
+> 先安装 https://github.com/MC090610/android-shell-skill ，再安装
 > https://github.com/paperlane-tools/android-quiz-skill 到技能目录，
 > 并把 `prompts/android-quiz.md` 放进 prompts / command 目录；
 > 最后按 SKILL.md 的 Step 0 自检环境并汇报传输方式、实体机/模拟器、是否有 root。
