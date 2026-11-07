@@ -9,6 +9,9 @@
 | 运行方式 | 电脑 adb / 安卓模拟器 / 本机 Termux + Shizuku |
 | 前置 | **android-shell**（必装，见下） |
 
+> **适用平台：Android 答题类 App**。主要适配「易智教云课堂」（`csgmooc.com`）这类
+> uni-app 答题页；其他安卓答题 App 也可用，但页面结构不同时需按 `SKILL.md` 调整。
+
 ---
 
 ## 前置技能（必读）
