@@ -7,6 +7,10 @@ argument-hint: "[可选：作业名 / 包名 / 要答的科目]"
 
 按技能规定执行，不要跳步：
 
+0. **先确认前置技能**：确认已安装
+   [`android-shell`](https://github.com/paperlane-tools/android-shell-skill)
+   （通用安卓控制：Shizuku / rish / 截图 / UI dump / 通知）。没装就先问我要不要装，
+   装好后再继续。答题技能只负责题目流程，设备层问题去 `android-shell` 排查。
 1. **先问用户**目标设备属于哪一种，然后等回答：
    ① 通过 USB 连接的实体安卓设备；② 安卓模拟器；③ 本机（Termux 里跑，无数据线）。
 2. 跑 `bash scripts/andev.sh detect`，并**如实汇报**探测结果：

@@ -11,6 +11,22 @@ Drive an Android app to answer questions. The pattern is always the same:
 **find the assignment → read the question → answer → verify → submit**. What
 changes per environment is only how you talk to the device.
 
+## Prerequisite: install `android-shell` first
+
+This skill only covers the **quiz workflow** (find the assignment → read the
+question → answer → verify → submit). The device-level capabilities come from
+the generic Android control skill:
+
+> **前置技能：[`android-shell`](https://github.com/paperlane-tools/android-shell-skill)**
+> 从 https://github.com/paperlane-tools/android-shell-skill 安装到你的技能目录
+> （Codex: `$CODEX_HOME/skills`；OpenClaw: `openclaw skills install`），
+> 并先完成那边的 Step 0 环境自检（Termux / Shizuku / rish / adb）。
+
+`android-shell` 提供 Shizuku `rish`、截图、UI dump、tap/swipe、通知以及 HyperOS
+机型注意事项；本技能只在其上叠加答题流程。`scripts/andev.sh` 自带一个兼容的
+adb / rish / su 传输层，所以纯 adb 环境也能跑，但**推荐先安装 android-shell**，
+这样设备层出问题时可以直接对照那边的排查步骤。
+
 ## What this skill can do
 
 - find the assignment in the app's work list and open it;
@@ -150,7 +166,9 @@ transport is interchangeable.
 Asking the phone for the foreground, the keyguard state or a wake-up is the
 device layer, not the quiz layer: the helper names and the OEM (HyperOS) quirks -
 app freezer, blocked background starts, screen-off behaviour - are documented in
-the `android-shell` skill, [../android-shell/references/hyperos.md](../android-shell/references/hyperos.md).
+the prerequisite [`android-shell`](https://github.com/paperlane-tools/android-shell-skill)
+skill, see
+[hyperos.md](https://github.com/paperlane-tools/android-shell-skill/blob/main/references/hyperos.md).
 
 ## If bash or node is not available (plain adb only)
 

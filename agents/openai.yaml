@@ -1,4 +1,4 @@
 interface:
   display_name: "Android Quiz Runner"
   short_description: "Answer quizzes inside an Android app over adb"
-  default_prompt: "Use $android-quiz to answer the quiz in this Android app - ask me first whether the target is a USB phone, an emulator or this device itself, then check adb/root/Shizuku and drive the app."
+  default_prompt: "Use $android-quiz to answer the quiz in this Android app. First make sure the prerequisite skill android-shell (https://github.com/paperlane-tools/android-shell-skill) is installed; if not, offer to install it. Then ask me whether the target is a USB phone, an emulator or this device itself, check adb/root/Shizuku, and drive the app."
